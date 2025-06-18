@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { SystemCheck } from '../components/SystemCheck';
 import { ModelSelector } from '../components/ModelSelector';
@@ -72,7 +73,6 @@ const Index = () => {
               if (currentStep === 2) setProcessedData(data);
               if (currentStep === 3) setTrainingConfig(data);
             }}
-            canProceed={currentStep === 0 ? true : steps[currentStep - 1]?.completed}
           />
         </div>
 
