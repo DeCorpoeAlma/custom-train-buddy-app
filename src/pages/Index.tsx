@@ -67,7 +67,6 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <StepComponent 
             onNext={() => setCurrentStep(Math.min(currentStep + 1, steps.length - 1))}
-            onPrev={() => setCurrentStep(Math.max(currentStep - 1, 0))}
             onComplete={(data) => {
               if (currentStep === 0) setSystemReady(data);
               if (currentStep === 1) setSelectedModel(data);
